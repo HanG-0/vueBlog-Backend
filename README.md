@@ -1,1 +1,1 @@
-这个是最开始的后端项目
+最开始的java后端项目框架，需要配置mysql才能使用项目中的数据库。先克隆到本地，在idea上创建新的git分支（如backend-chenWenHong）然后提交到github
