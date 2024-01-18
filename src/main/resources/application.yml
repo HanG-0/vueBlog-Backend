@@ -7,7 +7,8 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 #the test ip of mysql is  127.0.0.1, 3306 is the port of mysql
 #the name of database is vueblog and the character encoding is utf8
-    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+#链接数据库地址1
+    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&amp;useSSL=false&amp;characterEncoding=utf8&amp;serverTimezone=Asia/Shanghai&amp;useSSL=false
 #username of database is root and password is admin
     username: root
     password: admin
