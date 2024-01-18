@@ -8,6 +8,7 @@ public class VueBolgApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(VueBolgApplication.class, args);
+
     }
 
 }
