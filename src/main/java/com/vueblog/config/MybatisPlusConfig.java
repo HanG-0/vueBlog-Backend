@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //      PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
 //        return paginationInterceptor;
 //    }
+
 /*
 通过@mapperScan注解指定要变成实现类的接口所在的包
 然后包下面的所有接口在编译之后都会生成相应的实现类。
