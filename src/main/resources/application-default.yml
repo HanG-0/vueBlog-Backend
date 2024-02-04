@@ -1,0 +1,18 @@
+
+#springboot Config
+spring:
+  #DataSource Config
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #the test ip of mysql is  127.0.0.1, 3306 is the port of mysql
+    #the name of database is vueblog and the character encoding is utf8
+    #链接数据库地址1
+    url: jdbc:mysql://localhost:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    #username of database is root and password is admin
+    username: root
+    password: admin
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379

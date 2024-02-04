@@ -1,0 +1,22 @@
+
+# Mybatis Config
+# scan path of mybatis plus mapper in xml
+#映射文件配置问题 只有没有读取到，才会出现找不到的情况 用于将配置路径下的*.xml文件加载到mybatis中
+#如果引用mybatis-plus-boot-starter 依赖，需要配置 mybatis-plus.mapper-locations
+# **表示可以表示任意多级目录，如：上述配置可以查到【com/huaxin/framework/system/dao/UserDaoMapper.xml】
+#                *表示多个任意字符
+#classpath之后的星号表示不仅查询工作目录 还查询所有jar包的根路径，即所有jar包下的mapper文件夹
+#这里是相对路径
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+server:
+  port: 8081
+
+
+vueblog:
+  jwt:
+    #加密秘钥,可以随意编辑 jwtUtil处使用
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    #token有效时长，7天，单位：秒
+    expire: 604800
+    header: Authorization
