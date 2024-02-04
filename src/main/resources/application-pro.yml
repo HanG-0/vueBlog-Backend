@@ -6,7 +6,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
 #the test ip of mysql is  127.0.0.1, 3306 is the port of mysql
 #the name of database is vueblog and the character encoding is utf8
-#链接数据库地址1
+#链接数据库地址1 这里直接通过docker compose中的服务名称 即mysql代替localhost
     url: jdbc:mysql://mysql:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=UTC&allowPublicKeyRetrieval=true
 #username of database is root and password is admin
     username: root
@@ -14,7 +14,7 @@ spring:
 
 shiro-redis:
   enabled: true
-  redis-manager:
+  redis-manager: #通过服务名称redis代替ip
     host: redis:6379
 
 
