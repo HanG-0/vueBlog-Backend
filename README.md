@@ -44,3 +44,4 @@ hibernate validator作为后端参数校验工具
 9. 登录接口和博客接口实现（两个controller类）
 10.  控制层(controller-action)，业务层/服务层( bo-manager-service)，实体层(po-entity)，dao(dao)，视图对象(Vo-)，视图层(view-jsp/html)
 
+
