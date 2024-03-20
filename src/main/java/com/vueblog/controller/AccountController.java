@@ -31,6 +31,8 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @RestController
+//如果直接使用@Controller，返回的值会是一个网页，而使用@RestController，返回的就是我们想要的具体数据
+// 而前后端分离的项目，前后端之间传递的正是JSON类型的数值
 public class AccountController {
 
     @Autowired

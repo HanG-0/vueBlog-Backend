@@ -21,6 +21,7 @@ import javax.validation.constraints.NotBlank;
  * @author Generator@Hang
  * @since 2024-01-18
  */
+//最常用实体类，基本和数据表一一对应，一个实体一张表 下面定义了一个个属性
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
@@ -30,7 +31,7 @@ public class Blog implements Serializable {
     private static final long serialVersionUID = 1L;
 
 
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)//mybatis主键注解
     private Long id;
 
     private Long userId;
